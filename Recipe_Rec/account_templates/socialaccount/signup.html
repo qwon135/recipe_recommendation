@@ -1,0 +1,25 @@
+{% extends "socialaccount/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+
+<div class="signup-area container-fluid">
+  <div>
+    <div class="signup-title">
+      <h5>{% blocktrans with provider_name=account.get_provider.name site_name=site.name %}{{provider_name}} 계정을 통해 회원 가입을 하겠습니다. 닉네임을 설정 해주세요{% endblocktrans %}</h5>
+    </div>
+    <form class="signup" id="signup_form" method="post" action="{% url 'socialaccount_signup' %}">
+      {% csrf_token %}
+        {{ form.as_p }}
+      {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      {% endif %}
+      <button class='btn btn-signup float-end' type="submit"> 다음</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

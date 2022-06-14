@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.git
+dg.sqlite3
+recipe_Data
+*.pt
+_static
+_media
+node_modules

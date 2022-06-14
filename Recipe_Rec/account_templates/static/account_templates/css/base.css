@@ -1,0 +1,46 @@
+/* .base_background {
+    height: 450px!important;
+    width: 100%;
+    position: relative;
+
+    background: url('/static/main_page/images/back3.png') bottom center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size : cover;
+    -o-background-size: cover;
+} */
+
+.base_text {
+    text-align: center!important;
+    color: black!important;
+    
+}
+
+.login-area {
+    margin-top: 100px;
+}
+
+.signup-title {
+    margin-bottom: 50px;
+}
+
+.signout-title{
+    margin-bottom: 30px;
+}
+
+.btn-signup {
+    background-color: rgb(84, 84, 84)!important;
+    color: white!important;
+}
+
+.btn-signout {
+    background-color: rgb(84, 84, 84)!important;
+    color: white!important;
+    margin-left: 200px;
+    width: 70px;
+}
+
+.google-area{
+    width: 30%!important;
+    margin-top: 100px;
+}
